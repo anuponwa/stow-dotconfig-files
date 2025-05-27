@@ -1,0 +1,243 @@
+{
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 200,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.fontSize": 12,
+    "editor.fontWeight": "470",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontWeight": "470",
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "editor.fontLigatures": true,
+    "window.newWindowDimensions": "maximized",
+    "workbench.tree.indent": 24,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "notebook.editorOptionsCustomizations": {
+        "editor.tabSize": 4,
+        "editor.indentSize": 4
+    },
+    "workbench.list.openMode": "doubleClick",
+    "explorer.compactFolders": false,
+    "notebook.lineNumbers": "on",
+    "python.analysis.autoFormatStrings": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "files.eol": "\n",
+    "terminal.integrated.cursorStyle": "line",
+    "remote.autoForwardPortsSource": "hybrid",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.tokenColorCustomizations": {
+        "[Default Light+]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.class.python",
+                        "variable.parameter.function-call.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
+        },
+        "[Default Dark Modern]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type.class.python",
+                        "variable.parameter.function-call.python",
+                        "storage.type.function.python"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
+        },
+    },
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.tree.indent",
+        "editor.fontFamily",
+        "editor.fontWeight",
+        "editor.fontSize",
+        "terminal.integrated.fontWeight",
+        "workbench.list.openMode",
+        "files.eol",
+        "notebook.lineNumbers",
+        "editor.wordSeparators"
+    ],
+    "python.autoComplete.extraPaths": [
+        "./src"
+    ],
+    "python.analysis.extraPaths": [
+        "./src",
+        "./src/**"
+    ],
+    "python.analysis.exclude": [
+        ".venv"
+    ],
+    "python.analysis.indexing": false,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "./src",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "do_data_utils",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "fcst",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "elasticsearch-utils",
+            "depth": 4,
+            "includeAllSymbols": true
+        }
+    ],
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#56ABAB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        }
+    ],
+    "extensions.ignoreRecommendations": true,
+    "ruff.configuration": "",
+    "window.restoreWindows": "none",
+    "python.languageServer": "Pylance",
+    "python.analysis.include": [
+        "./src"
+    ],
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showUnits": false,
+    "editor.suggest.showWords": true,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showFunctions": true,
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.showConstants": true,
+    "editor.suggest.showFields": true,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showMethods": true,
+    "editor.suggest.showModules": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.parameterHints.enabled": false,
+    "editor.suggestSelection": "first",
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.completeFunctionParens": false,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.gotoDefinitionInStringLiteral": false,
+    "python.analysis.inlayHints.variableTypes": false,
+    "python.analysis.supportDocstringTemplate": true,
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.typeEvaluation.strictDictionaryInference": true,
+    "python.analysis.typeEvaluation.strictListInference": true,
+    "python.analysis.typeEvaluation.strictSetInference": true,
+    "editor.suggest.insertMode": "insert",
+    "terminal.integrated.gpuAcceleration": "off",
+    "latex-workshop.latex.clean.command": "pdflatex",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "C:/texlive/2025/bin/windows/pdflatex.exe",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "%DOC%"
+            ]
+        }
+    ],
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "editor.cursorWidth": 3,
+    "findJump.letterBackground": "#567899",
+    "findJump.letterForeground": "#a6d189",
+    "metaGo.decoration.backgroundColor": "#567899,#567899",
+    "metaGo.decoration.fontFamily": "'JetBrainsMono Nerd Font','Operator Mono SSm Lig', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "metaGo.decoration.backgroundOpacity": "1",
+    "metaGo.decoration.fontSize": 20,
+    "metaGo.decoration.color": "#a6d189,#a6d189",
+    "editor.smoothScrolling": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "terminal.external.linuxExec": "wezterm",
+    "explorer.confirmDragAndDrop": false,
+    "background.fullscreen": {
+        // Local images can be dragged into the browser to quickly get the file protocol address from the address bar
+        "images": [
+            "file:///home/umbalaxx/Pictures/fantasy-water-representation.jpg"
+        ],
+        "opacity": 0.05,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+    // `sidebar` and `panel` have the same config as `fullscreen`
+    "background.sidebar": {},
+    "background.panel": {},
+    "explorer.confirmDelete": false
+}
