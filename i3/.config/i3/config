@@ -12,8 +12,9 @@
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id feh --bg-scale /usr/share/backgrounds/lone-tree.jpg
 
-exec_always --no-startup-id setxkbmap -layout us,th -option grp:caps_toggle
+# exec_always --no-startup-id setxkbmap -layout us,th -option grp:caps_toggle
 
+# No sleep, disable power management, no blank screen
 exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset s noblank
 exec_always --no-startup-id xset -dpms
@@ -225,3 +226,6 @@ bar {
 # 		-p time.format="%H:%M" date.format="%a, %b %d %Y" \
 # 		-t moonlight-powerline
 # }
+
+# Set keyboard after everything is setup
+exec_always --no-startup-id "setxkbmap -layout us,th -option 'grp:caps_toggle'"
