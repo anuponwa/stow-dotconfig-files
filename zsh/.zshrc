@@ -129,3 +129,14 @@ alias ll='eza -l --git --group-directories-first --icons'
 alias la='eza -la --git --group-directories-first --icons'
 alias lt='eza -Tl --git --icons'
 . "$HOME/.local/bin/env"
+
+alias gs='git status'
+alias ga='git add '
+alias gc='git commit -m '
+alias gpl='git pull '
+alias gp='git push '
+
+alias gplo='git pull origin '
+alias gpo='git push origin '
+
+alias bye='shutdown -h now'
