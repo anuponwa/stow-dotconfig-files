@@ -139,4 +139,18 @@ alias gp='git push '
 alias gplo='git pull origin '
 alias gpo='git push origin '
 
+# Util
+alias monls='xrandr'
+alias mons='xrandr --output '
+
+alias wpls='wpctl status'
+alias wps='wpctl set-default '
+alias wpv='wpctl set-volume '
+alias wpm='wpctl set-mute '
+
+alias wifil='nmcli device wifi list'
+alias wific='nmcli device wifi connect '
+
+# Shutdown
 alias bye='shutdown -h now'
+

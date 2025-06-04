@@ -229,5 +229,5 @@ bar {
 # 		-t moonlight-powerline
 # }
 
-# Set keyboard after everything is setup
-exec_always --no-startup-id "setxkbmap -layout us,th -option 'grp:caps_toggle'"
+# Set keyboard script
+exec_always --no-startup-id ~/.config/i3/setxkbmap.sh
