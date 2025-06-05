@@ -123,12 +123,23 @@ source $ZSH/oh-my-zsh.sh
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+. "$HOME/.local/bin/env"
+
 # Custom aliases
 alias ls='eza --group-directories-first --icons'
 alias ll='eza -l --git --group-directories-first --icons'
 alias la='eza -la --git --group-directories-first --icons'
 alias lt='eza -Tl --git --icons'
-. "$HOME/.local/bin/env"
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
+
+alias conf='cd ~/.config'
+alias proj='cd ~/projects'
+alias conf-stow='cd ~/stow-dotconfig-files'
 
 alias gs='git status'
 alias ga='git add '
