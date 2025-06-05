@@ -216,11 +216,11 @@ default_border none
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-        font pango:JetBrainsMono Nerd Font 8
-        position top
-}
+# bar {
+#         status_command i3status
+#         font pango:JetBrainsMono Nerd Font 8
+#         position top
+# }
 # bar {
 #         font pango:JetBrainsMono Nerd Font 8
 # 	position top
@@ -233,3 +233,6 @@ bar {
 
 # Set keyboard script
 exec_always --no-startup-id ~/.config/i3/setxkbmap.sh
+
+# polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh

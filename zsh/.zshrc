@@ -139,7 +139,7 @@ alias ..4='cd ../../../..'
 
 alias conf='cd ~/.config'
 alias proj='cd ~/projects'
-alias conf-stow='cd ~/stow-dotconfig-files'
+alias confs='cd ~/stow-dotconfig-files'
 
 alias gs='git status'
 alias ga='git add '
