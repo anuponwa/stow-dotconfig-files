@@ -236,3 +236,7 @@ exec_always --no-startup-id ~/.config/i3/setxkbmap.sh
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Specify certain workspace to specific monitor
+workspace 9 output DP-2
+workspace 1 output DP-0 HDMI-0 DP-2
