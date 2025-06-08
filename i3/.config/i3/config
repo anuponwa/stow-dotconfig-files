@@ -238,5 +238,13 @@ exec_always --no-startup-id ~/.config/i3/setxkbmap.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Specify certain workspace to specific monitor
+# workspace 1 output DP-0 HDMI-0 DP-2
 workspace 9 output DP-2
-workspace 1 output DP-0 HDMI-0 DP-2
+
+# Launch main workspace
+# workspace 1 is not activated, not sure why
+# The move workspace commands haven't been tested
+# But I can always manually move it
+# exec_always --no-startup-id ~/.config/i3/setworkspace.sh
+
+# exec_always i3-msg "workspace 1"
