@@ -58,6 +58,7 @@ bindsym $mod+Control+$alt+e exec --no-startup-id xrandr --output DP-2 --off
 
 # Applications
 bindsym $mod+Shift+Return exec google-chrome
+bindsym $mod+Shift+s exec flameshot gui
 
 # Logout
 bindsym $mod+l exec gdmflexiserver
