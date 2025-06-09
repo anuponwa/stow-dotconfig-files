@@ -150,6 +150,10 @@ alias gp='git push '
 alias gplo='git pull origin '
 alias gpo='git push origin '
 
+# Cat
+alias cat='batcat'
+alias bat='batcat'
+
 # Util
 alias monls='xrandr'
 alias mons='xrandr --output '
