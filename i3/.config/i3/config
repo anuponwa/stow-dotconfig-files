@@ -54,6 +54,8 @@ exec --no-startup-id nm-applet
 
 # Custom binds to reset monitors
 bindsym $mod+Control+$alt+r exec --no-startup-id xrandr --output DP-2 --auto
+bindsym $mod+Control+$alt+e exec --no-startup-id ~/.config/i3/fix_display.sh
+
 # bindsym $mod+Control+$alt+e exec --no-startup-id xrandr --output DP-2 --off
 
 # Applications
@@ -242,6 +244,9 @@ default_border none
 
 # Set keyboard script
 exec_always --no-startup-id ~/.config/i3/setxkbmap.sh
+
+# set monitors
+exec_always --no-startup-id ~/.config/i3/fix_display.sh
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
