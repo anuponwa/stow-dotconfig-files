@@ -21,6 +21,11 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export FZF_DEFAULT_OPTS="--layout=reverse --border=bold --border=rounded --margin=3%"
+
+# Setting fd as the default source for fzf
+# This will respenct .gitignore, note that `fd-find` must be installed
+export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix'
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/

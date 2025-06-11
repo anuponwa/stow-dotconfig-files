@@ -246,10 +246,13 @@ default_border none
 exec_always --no-startup-id ~/.config/i3/setxkbmap.sh
 
 # set monitors
-exec_always --no-startup-id ~/.config/i3/fix_display.sh
+exec_always --no-startup-id ~/.config/i3/fix_display.sh  # Doesn't work, not sure why, the script actually works
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+
+exec_always --no-startup-id unclutter &  # unclutter program to hide mouse cursor
 
 # Specify certain workspace to specific monitor
 # workspace 1 output DP-0 HDMI-0 DP-2
