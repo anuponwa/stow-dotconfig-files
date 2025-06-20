@@ -130,11 +130,25 @@ source <(fzf --zsh)
 
 . "$HOME/.local/bin/env"
 
+
+# yazi config to press y, then exit with q with cwd changed
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
+
 # Custom aliases
 alias ls='eza --group-directories-first --icons'
 alias ll='eza -l --git --group-directories-first --icons'
 alias la='eza -la --git --group-directories-first --icons'
 alias lt='eza -Tl --git --icons'
+
+
+alias code='code --new-window'
 
 alias ..='cd ..'
 alias ...='cd ../..'
