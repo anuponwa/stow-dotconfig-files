@@ -154,6 +154,7 @@ alias gp='git push '
 
 alias gplo='git pull origin '
 alias gpo='git push origin '
+alias lg='lazygit'
 
 # Cat
 alias cat='batcat'
