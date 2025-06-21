@@ -148,7 +148,8 @@ alias la='eza -la --git --group-directories-first --icons'
 alias lt='eza -Tl --git --icons'
 
 
-alias code='code --new-window'
+alias cn='code --new-window'
+alias c='code'
 
 alias ..='cd ..'
 alias ...='cd ../..'
