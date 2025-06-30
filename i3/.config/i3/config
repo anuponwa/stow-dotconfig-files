@@ -11,6 +11,7 @@
 
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id feh --bg-scale /usr/share/backgrounds/lone-tree.jpg
+workspace_layout tabbed
 
 # exec_always --no-startup-id setxkbmap -layout us,th -option grp:caps_toggle
 
