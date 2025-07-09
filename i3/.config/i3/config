@@ -29,8 +29,8 @@ set $alt Mod1
 font pango:JetBrains Mono Nerd Font 8
 
 # Set gaps
-gaps inner 10
-gaps outer 2
+gaps inner 4
+gaps outer 1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
