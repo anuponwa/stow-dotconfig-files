@@ -1,4 +1,3 @@
-fastfetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -126,9 +125,9 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 
 # yazi config to press y, then exit with q with cwd changed
@@ -172,8 +171,8 @@ alias gpo='git push origin '
 alias lg='lazygit'
 
 # Cat
-alias cat='batcat'
-alias bat='batcat'
+# alias cat='batcat'
+# alias bat='batcat'
 
 # Util
 alias monls='xrandr'
