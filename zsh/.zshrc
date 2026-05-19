@@ -141,6 +141,11 @@ function y() {
 
 
 # Custom aliases
+
+capslocknodelay() {
+    hidutil property --set '{"CapsLockDelayOverride":0}'
+}
+
 alias ls='eza --group-directories-first --icons'
 alias ll='eza -l --git --group-directories-first --icons'
 alias la='eza -la --git --group-directories-first --icons'
@@ -189,3 +194,7 @@ alias wific='nmcli device wifi connect '
 # Shutdown
 alias bye='shutdown -h now'
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/patrick/.antigravity/antigravity/bin:$PATH"
