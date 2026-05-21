@@ -198,3 +198,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/patrick/.antigravity/antigravity/bin:$PATH"
+
+# Added by Antigravity IDE
+export PATH="/Users/patrick/.antigravity-ide/antigravity-ide/bin:$PATH"
+
+# Conda via homebrew
+export PATH="/opt/homebrew/anaconda3/bin:$PATH"
