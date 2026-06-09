@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -23,7 +24,8 @@ export FZF_DEFAULT_OPTS="--layout=reverse --border=bold --border=rounded --margi
 
 # Setting fd as the default source for fzf
 # This will respenct .gitignore, note that `fd-find` must be installed
-export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix'
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --follow --exclude anaconda3 --exclude .conda --exclude __conda_setup --exclude .git --exclude .venv --exclude .DS_Store --exclude venv --exclude __pycache__ --exclude node_modules'
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -146,6 +148,9 @@ capslocknodelay() {
     hidutil property --set '{"CapsLockDelayOverride":0}'
 }
 
+alias fn='nvim $(fzf)'
+alias cf='cd $(fd --type d --strip-cwd-prefix --follow --exclude anaconda3 --exclude .conda --exclude __conda_setup --exclude .git --exclude .venv --exclude .DS_Store --exclude venv --exclude __pycache__ --exclude node_modules | fzf)'
+
 alias ls='eza --group-directories-first --icons'
 alias ll='eza -l --git --group-directories-first --icons'
 alias la='eza -la --git --group-directories-first --icons'
@@ -175,9 +180,30 @@ alias gplo='git pull origin '
 alias gpo='git push origin '
 alias lg='lazygit'
 
+alias v='nvim'
+# alias tm='tmux'
+
+tm() {
+  if [[ "$1" == "n" ]]; then
+    shift
+    tmux new -s "$@"
+  elif [[ "$1" == "a" ]]; then
+    shift
+    tmux attach -t "$@"
+  elif [[ "$1" == "k" ]]; then
+    shift
+    tmux kill-session -t "$@"
+  else
+    tmux "$@"
+  fi
+}
+
 # Cat
 # alias cat='batcat'
 # alias bat='batcat'
+
+# Set vi mode in shell
+set -o vi
 
 # Util
 alias monls='xrandr'
@@ -220,3 +246,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# Added by Windsurf
+export PATH="/Users/patrick/.codeium/windsurf/bin:$PATH"
